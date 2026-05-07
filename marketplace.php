@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Boutique de iphones & Réparation</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+      
+<nav class="navbar justify-content-center">
+    <div class="nav-icons d-flex">
+
+        <a href="index.php"><i class="fa-solid fa-house"></i></a>
+
+        <a href="marketplace.php"><i class="fa-solid fa-store"></i></a>
+
+        <a href="contact.php"><i class="fa-solid fa-envelope"></i></a>
+        
+        <a href="reparer.php"><i class="fa-solid fa-wrench"></i></a>
+        
+
+    </div>
+</nav>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Outfit;
+  background:#fff;
+  color:#111;
+}
+
+/* HEADER */
+.header{
+  text-align:center;
+  padding:25px;
+  border-bottom:1px solid #eee;
+}
+
+.header h1{
+  font-family:"Bebas Neue";
+  font-size:60px;
+  letter-spacing:2px;
+}
+
+.header p{
+  color:#666;
+  margin-top:5px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:20px;
+  padding:20px;
+}
+
+/* CARD */
+.card{
+  border:1px solid #eee;
+  border-radius:15px;
+  overflow:hidden;
+  transition:0.3s;
+  background:#fff;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  background:#f5f5f5;
+}
+
+.card h3{
+  text-align:center;
+  margin:15px 0;
+  font-size:20px;
+}
+
+/* BUTTON */
+.btn{
+  display:block;
+  margin:10px;
+  padding:12px;
+  text-align:center;
+  background:#000;
+  color:#fff;
+  text-decoration:none;
+  border-radius:10px;
+  transition:0.3s;
+  font-weight:600;
+}
+
+.btn:hover{
+  background:#ff6b6b;
+}
+
+/* SECTION PRO */
+.pro-section{
+  margin:40px 20px;
+}
+
+.pro-card{
+  background:#000;
+  color:#fff;
+  border-radius:20px;
+  padding:40px 20px;
+  text-align:center;
+}
+
+.pro-card h2{
+  font-size:40px;
+  font-family:"Bebas Neue";
+  letter-spacing:2px;
+  margin-bottom:10px;
+}
+
+.pro-card p{
+  color:#ddd;
+  max-width:700px;
+  margin:auto;
+  line-height:1.7;
+}
+
+.pro-btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 28px;
+  background:#fff;
+  color:#000;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.pro-btn:hover{
+  background:#ff6b6b;
+  color:#fff;
+}
+
+/* WHATSAPP */
+.wa{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#000;
+  padding:12px 18px;
+  border-radius:30px;
+  z-index:1000;
+}
+
+.wa a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <h1>iPhone Store</h1>
+  <p>Choisissez votre modèle</p>
+</div>
+
+<div class="grid">
+
+<!-- XR -->
+<div class="card">
+  <img src="xr.jpeg" alt="iPhone XR">
+  <h3>iPhone XR</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%20XR">Commander</a>
+</div>
+
+<!-- XS -->
+<div class="card">
+  <img src="xs.jpeg" alt="iPhone XS">
+  <h3>iPhone XS</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%20XS">Commander</a>
+</div>
+
+<div class="card">
+  <img src="xsmax.jpeg" alt="iPhone XS Max">
+  <h3>iPhone XS Max</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%20XS%20Max">Commander</a>
+</div>
+
+<div class="card">
+  <img src="11.jpeg" alt="iPhone 11">
+  <h3>iPhone 11</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2011">Commander</a>
+</div>
+
+<div class="card">
+  <img src="11pro.jpeg" alt="iPhone 11 Pro">
+  <h3>iPhone 11 Pro</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2011%20Pro">Commander</a>
+</div>
+
+<div class="card">
+  <img src="11promax.jpeg" alt="iPhone 11 Pro Max">
+  <h3>iPhone 11 Pro Max</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2011%20Pro%20Max">Commander</a>
+</div>
+
+<div class="card">
+  <img src="12.jpeg" alt="iPhone 12">
+  <h3>iPhone 12</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2012">Commander</a>
+</div>
+
+<div class="card">
+  <img src="12pro.jpeg" alt="iPhone 12 Pro">
+  <h3>iPhone 12 Pro</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2012%20Pro">Commander</a>
+</div>
+
+<div class="card">
+  <img src="12promax.jpeg" alt="iPhone 12 Pro Max">
+  <h3>iPhone 12 Pro Max</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2012%20Pro%20Max">Commander</a>
+</div>
+
+<div class="card">
+  <img src="13.jpeg" alt="iPhone 13">
+  <h3>iPhone 13</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2013">Commander</a>
+</div>
+
+<div class="card">
+  <img src="13pro.jpeg" alt="iPhone 13 Pro">
+  <h3>iPhone 13 Pro</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2013%20Pro">Commander</a>
+</div>
+
+<div class="card">
+  <img src="13promax.jpeg" alt="iPhone 13 Pro Max">
+  <h3>iPhone 13 Pro Max</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2013%20Pro%20Max">Commander</a>
+</div>
+
+<div class="card">
+  <img src="14.jpeg" alt="iPhone 14">
+  <h3>iPhone 14</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2014">Commander</a>
+</div>
+
+<div class="card">
+  <img src="14pro.jpeg" alt="iPhone 14 Pro">
+  <h3>iPhone 14 Pro</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2014%20Pro">Commander</a>
+</div>
+
+<div class="card">
+  <img src="14promax.jpeg" alt="iPhone 14 Pro Max">
+  <h3>iPhone 14 Pro Max</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2014%20Pro%20Max">Commander</a>
+</div>
+
+<div class="card">
+  <img src="15.jpeg" alt="iPhone 15">
+  <h3>iPhone 15</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2015">Commander</a>
+</div>
+
+<div class="card">
+  <img src="15pro.jpeg" alt="iPhone 15 Pro">
+  <h3>iPhone 15 Pro</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2015%20Pro">Commander</a>
+</div>
+
+<div class="card">
+  <img src="15promax.jpeg" alt="iPhone 15 Pro Max">
+  <h3>iPhone 15 Pro Max</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2015%20Pro%20Max">Commander</a>
+</div>
+
+<div class="card">
+  <img src="16.jpeg" alt="iPhone 16">
+  <h3>iPhone 16</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2016">Commander</a>
+</div>
+
+<div class="card">
+  <img src="16pro.jpeg" alt="iPhone 16 Pro">
+  <h3>iPhone 16 Pro</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2016%20Pro">Commander</a>
+</div>
+
+<div class="card">
+  <img src="16promax.jpeg" alt="iPhone 16 Pro Max">
+  <h3>iPhone 16 Pro Max</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2016%20Pro%20Max">Commander</a>
+</div>
+
+<div class="card">
+  <img src="17.jpeg" alt="iPhone 17">
+  <h3>iPhone 17</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2017">Commander</a>
+</div>
+
+<div class="card">
+  <img src="17air.jpeg" alt="iPhone 17 Air">
+  <h3>iPhone 17 Air</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2017%20Air">Commander</a>
+</div>
+
+<div class="card">
+  <img src="17pro.jpeg" alt="iPhone 17 Pro">
+  <h3>iPhone 17 Pro</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2017%20Pro">Commander</a>
+</div>
+
+<div class="card">
+  <img src="17promax.jpeg" alt="iPhone 17 Pro Max">
+  <h3>iPhone 17 Pro Max</h3>
+  <a class="btn" target="_blank" href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20commander%20un%20iPhone%2017%20Pro%20Max">Commander</a>
+</div>
+
+</div>
+ <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="footer-title"><i class="fas fa-shoe-prints me-2"></i>StyleStep</h4>
+                    <p>Votre destination pour des téléphones de qualité, et performants. Profitez d’une livraison rapide et d’un service client exceptionnel.</p>
+                   
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.php">Accueil</a></li>
+                        
+                        <li><a href="contact.php">Contact</a></li>
+             
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Catégories</h4>
+                    <ul class="footer-links">
+                        <li><a href="marketplace.php">IPhones</a></li>
+                        <li><a href="samsung.php">Samsung</a></li>
+                        <li><a href="Tablettes.php">Tablettes</a></li>
+                        <li><a href="reparer.php">Réparation</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>calavi togba non loin du Carrefou ,Assrossa</li>
+                        <li><i class="fas fa-phone me-2"></i> 0143520071</li>
+                        <li><i class="fas fa-clock me-2"></i> Lundi - Samedi : 9h - 20h</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center">
+            <div class="container">
+                <p>&copy; 2026 MONEYKING. Tous droits réservés.</p>
+            </div>
+
+</body>
+</html>

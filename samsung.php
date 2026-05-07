@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Boutique de iphones & Réparation</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+   
+<nav class="navbar justify-content-center">
+    <div class="nav-icons d-flex">
+
+        <a href="index.php"><i class="fa-solid fa-house"></i></a>
+
+        <a href="marketplace.php"><i class="fa-solid fa-store"></i></a>
+
+        <a href="contact.php"><i class="fa-solid fa-envelope"></i></a>
+        
+        <a href="reparer.php"><i class="fa-solid fa-wrench"></i></a>
+        
+
+    </div>
+</nav>
+
+<section class="repair-section">
+<div class="container">
+<h2 class="title">SAMSUNG'S</h2>
+
+<div class="grid">
+
+<!-- CARD -->
+<div class="card">
+<img src="s8.jpeg">
+<h3> Samsung S8</h3>
+<a href="" class="btn">Commander</a>
+</div>
+
+<div class="card">
+<img src="s8plus.jpeg">
+<h3> Samsung S8 Plus</h3>
+<a href="" class="btn">Commander</a>
+</div>
+
+<div class="card">
+<img src="s09.jpeg">
+<h3> Samsung S9</h3>
+<a href="#" class="btn">Commander</a>
+</div>
+
+<div class="card">
+<img src="s10.jpeg">
+<h3> Samsung S10</h3>
+<a href="#" class="btn">Commander</a>
+</div>
+
+<div class="card">
+<img src="s10plus.jpeg">
+<h3> Samsung S10 Plus</h3>
+<a href="#" class="btn">Commander</a>
+</div>
+
+<div class="card">
+<img src=s21.jpeg>
+<h3> Samsung S21</h3>"">
+<a href="#" class="btn">Commander</a>
+</div>
+
+<div class="card">
+<img src="s24ultra.jpeg">
+<a href="#" class="btn">Commander</a>
+</div>
+
+<div class="card">
+<img src="S26ultra.jpeg">
+<h3>Samsung S26 Ultra</h3>
+<a href="#" class="btn">Commander</a>
+</div>
+
+<div class="card">
+<img src="galaxy.jpeg">
+<h3>Samsung Galaxy</h3>
+<a href="#" class="btn">Commander</a>
+</div>
+
+<div class="card">
+<img src="A05.jpeg">
+<h3>Samsung A05</h3>
+<a href="#" class="btn">Commander</a>
+</div>
+
+<div class="card">
+<img src="A07.jpeg">
+<h3>Samsung A07</h3>
+<a href="#" class="btn">Commander</a>
+</div>
+
+<div class="card">
+<img src="A14.jpeg">
+<h3>Samsung A14</h3>
+<a href="#" class="btn">Commander</a>
+</div>
+
+<div class="card">
+<img src="A34.jpeg">
+<h3>Samsung A34 </h3>
+<a href="#" class="btn">Commander</a>
+</div>
+</div>
+</div>
+ <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="footer-title"><i class="fas fa-shoe-prints me-2"></i>StyleStep</h4>
+                    <p>Votre destination pour des téléphones de qualité, et performants. Profitez d’une livraison rapide et d’un service client exceptionnel.</p>
+                   
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.php">Accueil</a></li>
+                      
+                        <li><a href="contact.php">Contact</a></li>
+             
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Catégories</h4>
+                    <ul class="footer-links">
+                        <li><a href="marketplace.php">IPhones</a></li>
+                        <li><a href="samsung.php">Samsung</a></li>
+                        <li><a href="Tablettes.php">Tablettes</a></li>
+                        <li><a href="reparer.php">Réparation</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>calavi togba non loin du Carrefou ,Assrossa</li>
+                        <li><i class="fas fa-phone me-2"></i> 0143520071</li>
+                        <li><i class="fas fa-clock me-2"></i> Lundi - Samedi : 9h - 20h</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center">
+            <div class="container">
+                <p>&copy; 2026 MONEYKING. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</section>
+<style>
+:root {
+    --primary: #ff6b6b;
+}
+
+/* SECTION */
+.repair-section {
+    background: #ffffff;
+    padding: 60px 20px;
+}
+
+.title {
+    text-align: center;
+    color: #000;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+    color: #000;
+    border: 1px solid #eee;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* hover image zoom */
+.card:hover img {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.card h3 {
+    margin-top: 10px;
+}
+
+.card p {
+    padding: 0 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* hover card */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* BOUTON */
+.btn {
+    display: block;
+    margin: 15px;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--primary);
+}</style>

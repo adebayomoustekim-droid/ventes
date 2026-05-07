@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Boutique de iphones & Réparation</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+   
+<nav class="navbar justify-content-center">
+    <div class="nav-icons d-flex">
+
+        <a href="index.php"><i class="fa-solid fa-house"></i></a>
+
+        <a href="marketplace.php"><i class="fa-solid fa-store"></i></a>
+
+        <a href="contact.php"><i class="fa-solid fa-envelope"></i></a>
+        
+        <a href="reparer.php"><i class="fa-solid fa-wrench"></i></a>
+        
+
+    </div>
+</nav>
+<style>
+
+:root{
+  --primary:#ff6b6b;
+  --dark:#111;
+  --gray:#777;
+  --light:#f5f5f5;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Outfit;
+  background:#fff;
+  color:#111;
+  padding-top:90px;
+}
+
+/* NAVBAR */
+.navbar{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:#fff;
+  padding:18px 0;
+  z-index:1000;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.nav-container{
+  width:90%;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-family:"Bebas Neue";
+  font-size:38px;
+  letter-spacing:2px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#111;
+  margin-left:25px;
+  font-weight:600;
+  transition:0.3s;
+  position:relative;
+}
+
+.nav-links a:hover{
+  color:var(--primary);
+}
+
+.nav-links a::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:-6px;
+  width:0%;
+  height:2px;
+  background:var(--primary);
+  transition:0.3s;
+  transform:translateX(-50%);
+}
+
+.nav-links a:hover::after{
+  width:100%;
+}
+
+/* HERO */
+.hero{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.hero h1{
+  font-family:"Bebas Neue";
+  font-size:90px;
+  letter-spacing:4px;
+}
+
+.hero p{
+  color:var(--gray);
+  margin-top:10px;
+  font-size:18px;
+}
+
+/* CONTACT SECTION */
+.contact-section{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:30px;
+  padding-bottom:80px;
+}
+
+/* CARD */
+.contact-card,
+.about-card{
+  background:#fff;
+  border:1px solid #eee;
+  border-radius:24px;
+  padding:35px;
+  transition:0.3s;
+}
+
+.contact-card:hover,
+.about-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
+
+.contact-card h2,
+.about-card h2{
+  margin-bottom:20px;
+  font-size:30px;
+}
+
+.contact-info{
+  margin-bottom:20px;
+}
+
+.contact-info p{
+  margin-bottom:15px;
+  color:#555;
+  line-height:1.7;
+}
+
+/* FORM */
+form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+input,
+textarea{
+  width:100%;
+  padding:15px;
+  border:1px solid #ddd;
+  border-radius:14px;
+  font-family:Outfit;
+  outline:none;
+  transition:0.3s;
+  font-size:15px;
+}
+
+input:focus,
+textarea:focus{
+  border-color:var(--primary);
+}
+
+textarea{
+  resize:none;
+  height:140px;
+}
+
+button{
+  background:#111;
+  color:#fff;
+  border:none;
+  padding:15px;
+  border-radius:14px;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+  font-weight:600;
+}
+
+button:hover{
+  background:var(--primary);
+}
+
+/* WHATSAPP */
+.whatsapp-box{
+  margin-top:25px;
+  background:#111;
+  padding:25px;
+  border-radius:18px;
+  text-align:center;
+}
+
+.whatsapp-box h3{
+  color:#fff;
+  margin-bottom:10px;
+  font-size:24px;
+}
+
+.whatsapp-box p{
+  color:#ddd;
+  margin-bottom:18px;
+  line-height:1.6;
+}
+
+.whatsapp-btn{
+  display:inline-block;
+  background:#fff;
+  color:#111;
+  text-decoration:none;
+  padding:14px 24px;
+  border-radius:12px;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.whatsapp-btn:hover{
+  background:var(--primary);
+  color:#fff;
+}
+
+/* ABOUT */
+.about-section{
+  width:90%;
+  max-width:1200px;
+  margin:0 auto 40px;
+}
+
+.about-card p{
+  color:#555;
+  line-height:1.9;
+  margin-bottom:18px;
+  font-size:16px;
+}
+
+.about-card h3{
+  margin-top:25px;
+  font-size:28px;
+  color:var(--primary);
+}
+
+/* ADVANTAGES */
+.advantages{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+
+.advantage-box{
+  background:var(--light);
+  padding:20px;
+  border-radius:16px;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.advantage-box:hover{
+  background:#111;
+  color:#fff;
+  transform:translateY(-5px);
+}
+
+.final-text{
+  margin-top:30px;
+  font-size:18px;
+  font-weight:600;
+  color:#111;
+}
+
+
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+  .hero h1{
+    font-size:60px;
+  }
+
+  .nav-container{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .nav-links a{
+    margin:0 10px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 class="mt-5">Contactez-nous</h1>
+    <p class="lead">Nous sommes là pour vous aider. N'hésitez pas à nous contacter pour toute question ou demande d'information.</p>
+
+</div>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+
+  <!-- INFOS -->
+  <div class="contact-card">
+
+    <h2>Nos informations</h2>
+
+    <div class="contact-info">
+      <p>📍 Cotonou, Bénin</p>
+      <p>📞 +229 01 43 52 00 71</p>
+      <p>📧adebayomoustekim@gmail.com</p>
+      <p>⏰ Disponible tous les jours</p>
+    </div>
+
+    <div class="whatsapp-box">
+
+      <h3>Commande rapide WhatsApp</h3>
+
+      <p>
+        Discutez directement avec nous pour commander votre iPhone
+        en toute sécurité.
+      </p>
+
+      <a class="whatsapp-btn"
+      target="_blank"
+      href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20plus%20d'informations">
+      Ouvrir WhatsApp
+      </a>
+
+    </div>
+
+  </div>
+
+  <!-- FORMULAIRE -->
+  <div class="contact-card">
+
+    <h2>Envoyer un message</h2>
+
+    <form>
+
+      <input type="text" placeholder="Votre nom">
+
+      <input type="email" placeholder="Votre email">
+
+      <input type="text" placeholder="Sujet">
+
+      <textarea placeholder="Votre message"></textarea>
+
+      <button type="submit">Envoyer</button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<!-- À PROPOS -->
+<section class="about-section" id="about">
+
+  <div class="about-card">
+
+    <h2>À propos de nous</h2>
+
+    <p>
+      Je suis <strong>Josué HOUNFODJI</strong>,
+      juriste de formation et entrepreneur passionné
+      par le monde des affaires et de la technologie.
+    </p>
+
+    <p>
+      Animé très tôt par l’esprit entrepreneurial,
+      j’ai commencé la vente d’iPhone pendant mes années universitaires.
+      Ce qui était au départ une simple activité est devenu,
+      au fil des années, une véritable passion et une expertise.
+    </p>
+
+    <p>
+      Après plus de <strong>4 années d’expérience</strong> dans le domaine,
+      j’ai ouvert ma propre boutique spécialisée dans la vente
+      d’iPhone et d’appareils technologiques.
+    </p>
+
+    <p>
+      Mon objectif est simple :
+      offrir à chaque client des produits fiables,
+      modernes et de qualité avec un accompagnement sérieux
+      et professionnel.
+    </p>
+
+    <h3>
+      L’excellence de la technologie à votre portée.
+    </h3>
+
+  </div>
+
+</section>
+
+<!-- AVANTAGES -->
+<section class="about-section">
+
+  <div class="about-card">
+
+    <h2>Pourquoi acheter chez nous ?</h2>
+
+    <p>
+      Chez nous, vous payez peut-être un peu plus,
+      mais vous êtes en sécurité et en confiance.
+    </p>
+
+    <p>
+      Nous privilégions la qualité,
+      l’authenticité et le suivi client.
+    </p>
+
+    <div class="advantages">
+
+      <div class="advantage-box">
+        ✅ Produits fiables et vérifiés
+      </div>
+
+      <div class="advantage-box">
+        ✅ Accompagnement avant et après achat
+      </div>
+
+      <div class="advantage-box">
+        ✅ Assistance disponible en cas de problème
+      </div>
+
+      <div class="advantage-box">
+        ✅ Service professionnel et transparent
+      </div>
+
+    </div>
+
+    <p class="final-text">
+      Ici, vous n’achetez pas seulement un téléphone…
+      vous achetez aussi la tranquillité d’esprit et la confiance.
+    </p>
+
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+  emailjs.init("TON_PUBLIC_KEY"); 
+})();
+
+document.getElementById("contact-form").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "TON_SERVICE_ID",
+    "TON_TEMPLATE_ID",
+    this
+  ).then(function(){
+    alert("Message envoyé avec succès !");
+  }, function(error){
+    alert("Erreur envoi");
+  });
+
+});
+</script>
+
+ <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="footer-title"><i class="fas fa-shoe-prints me-2"></i>StyleStep</h4>
+                    <p>Votre destination pour des téléphones de qualité, et performants. Profitez d’une livraison rapide et d’un service client exceptionnel.</p>
+                   
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.php">Accueil</a></li>
+           
+                        <li><a href="contact.php">Contact</a></li>
+             
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Catégories</h4>
+                    <ul class="footer-links">
+                        <li><a href="marketplace.php">IPhones</a></li>
+                        <li><a href="samsung.php">Samsung</a></li>
+                        <li><a href="Tablettes.php">Tablettes</a></li>
+                        <li><a href="reparer.php">Réparation</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>calavi togba non loin du Carrefou ,Assrossa</li>
+                        <li><i class="fas fa-phone me-2"></i> 0143520071</li>
+                        <li><i class="fas fa-clock me-2"></i> Lundi - Samedi : 9h - 20h</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center">
+            <div class="container">
+                <p>&copy; 2026 MONEYKING. Tous droits réservés.</p>
+            </div>
+
+</body>
+</html>

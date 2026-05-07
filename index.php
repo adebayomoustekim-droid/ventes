@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Boutique de iphones & Réparation</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+   
+<nav class="navbar justify-content-center">
+    <div class="nav-icons d-flex">
+
+        <a href="index.php"><i class="fa-solid fa-house"></i></a>
+
+        <a href="marketplace.php"><i class="fa-solid fa-store"></i></a>
+
+        <a href="contact.php"><i class="fa-solid fa-envelope"></i></a>
+        
+        <a href="reparer.php"><i class="fa-solid fa-wrench"></i></a>
+        
+
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="display-4 fw-bold">BIENVENUE CHEZ MONEYKING</h1>
+                <p class="lead mb-4">Découvrez les meilleurs iPhones et accessoires au meilleur prix</p>
+                <a href="#" class="btn btn-primary-custom">Découvrir la collection</a>
+
+            </div>
+    </section>
+
+   <!-- Catégories -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title">Nos Catégories</h2>
+        <div class="row">
+
+            <!-- SAMSUNG -->
+            <div class="col-md-4">
+                <div class="category-card">
+
+                    <div id="samsungCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="image6.jpg" class="category-img" alt="Chaussures Homme">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="image7.jpg" class="category-img" alt="Chaussures Femme">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="image12.jpg" class="category-img" alt="Chaussures Femme">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="category-overlay">
+                        <h3>Samsungs</h3>
+                        <a href="samsung.php" class="btn btn-light">Voir collection</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- IPHONE -->
+            <div class="col-md-4">
+                <div class="category-card">
+
+                    <div id="iphoneCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="iphone11.jpg" class="category-img" alt="Chaussures Femme">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="image5.jpg" class="category-img" alt="Chaussures Femme">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="image10.JPG" class="category-img" alt="Chaussures Femme">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="category-overlay">
+                        <h3>iPhones</h3>
+                        <a href="marketplace.php" class="btn btn-light">Voir collection</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ACCESSOIRES -->
+            <div class="col-md-4">
+                <div class="category-card">
+
+                    <div id="accessCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="image9.jpg" class="category-img" alt="Chaussures Enfant">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="category-overlay">
+                        <h3>Tablettes</h3>
+                 <a href="Tablettes.php" class="btn btn-light">Voir collection</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+       
+    </section>
+
+
+    <!-- Nouveautés -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Nouveautés</h2>
+            <div class="row">
+                <!-- Produit 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card product-card">
+                        <span class="badge bg-danger product-badge">Nouveau</span>
+                        <img src="image13.jpg" class="card-img-top product-img" alt="image13.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Bluetooth portable JBL boombox</h5>
+                            <p class="card-text">Une autonomie exceptionnelle pour des sessions de musique inégalées</p>
+                      
+                            <a class="btn btn-cart w-100"
+                                href="https://wa.me/2290143520071?text=Bonjour%20👋%0A%0A📻%20Je%20veux%20commander%20le%20Bluetooth%20JBL%20boombox%0A%0A📦%20Produit%20:%20Bluetooth%20JBL%20boombox%0A🖼️%20Image%20:%20image13.jpg%0A%0AMerci%20de%20me%20donner%20le%20prix%20🙏"
+                                target="_blank">
+                                Commander
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produit 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card product-card">
+                        <span class="badge bg-danger product-badge">Nouveau</span>
+                        <img src="image14.jpg" class="card-img-top product-img" alt="image14.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Manettes de jeu vidéo</h5>
+                            <p class="card-text">Contrôles précis et confortables pour une expérience de jeu optimale</p>
+                        
+                            <a class="btn btn-cart w-100"
+                                href="https://wa.me/2290143520071?text=Bonjour%20👋%0A%0A🎮%20Je%20veux%20commander%20les%20manettes%20de%20jeu%20vidéo%0A%0A📦%20Produit%20:%20Manettes%20de%20jeu%20vidéo%0A🖼️%20Image%20:%20image14.jpg%0A%0AMerci%20de%20me%20donner%20le%20prix%20🙏"
+                                target="_blank">
+                                Commander
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produit 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card product-card">
+                        <span class="badge bg-danger product-badge">Nouveau</span>
+                        <img src="image15.jpg" class="card-img-top product-img" alt="imagae15.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Bluetooth de marque Harman Kardon</h5>
+                            <p class="card-text">Une qualité sonore exceptionnelle pour des sessions d'écoute inégalées</p>
+                         
+                            <a class="btn btn-cart w-100"
+                                href="https://wa.me/2290143520071?text=Bonjour%20👋%0A%0A🎵%20Je%20veux%20commander%20le%20Bluetooth%20Harman%20Kardon%0A%0A📦%20Produit%20:%20Bluetooth%20Harman%20Kardon%0A🖼️%20Image%20:%20image15.jpg%0A%0AMerci%20de%20me%20donner%20le%20prix%20🙏"
+                                target="_blank">
+                                Commander
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produit 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card product-card">
+                        <span class="badge bg-danger product-badge">Nouveau</span>
+                        <img src="image16.jpg" class="card-img-top product-img" alt="image16.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Iphone 16 & Tablette</h5>
+                            <p class="card-text">Un appareil polyvalent pour tous vos besoins</p>
+                        
+                            <a class="btn btn-cart w-100"
+                                href="https://wa.me/2290143520071?text=Bonjour%20👋%0A%0A📱%20Je%20veux%20commander%20l'iPhone%2016%20et%20la%20tablette%0A%0A📦%20Produit%20:%20iPhone%2016%20&%20Tablette%0A🖼️%20Image%20:%20image16.jpg%0A%0AMerci%20de%20me%20donner%20le%20prix%20🙏"
+                                target="_blank">
+                                Commander
+                            </a>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <script>
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+document.addEventListener("click", function (e) {
+
+    if (e.target.classList.contains("add-to-cart")) {
+        e.preventDefault();
+
+        let card = e.target.closest(".card");
+
+        let name = card.querySelector(".product-title").innerText;
+        let price = 0; // pas de prix donc on met 0 ou tu peux ajouter après
+
+        cart.push({
+            name: name,
+            price: price
+        });
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        alert(name + " ajouté au panier ✅");
+    }
+}); </script>
+   
+
+    <!-- Features -->
+    <section class="features-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h4>Livraison Rapide</h4>
+                        <p>Livraison gratuite en 24-48h</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-undo"></i>
+                        </div>
+                        <h4>Retours Faciles</h4>
+                        <p>30 jours pour changer d'avis</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h4>Paiement Sécurisé</h4>
+                        <p>Transactions cryptées</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>Support 24/7</h4>
+                        <p>Assistance client dédiée</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Ce que disent nos clients</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                       
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-3">"Franchement satisfait ! Le téléphone fonctionne super bien et le prix est vraiment intéressant.. Livraison ultra rapide !"</p>
+                        <h5>Josué OLA</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-3">""J’avais un peu peur au début, mais tout s’est bien passé. Téléphone reçu, propre et sans problème.""</p>
+                        <h5>Josias WOROU</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-3">"J’ai commandé mon iPhone et je l’ai reçu en parfait état. Livraison rapide et téléphone authentique."</p>
+                        <h5>Moustèkim DGK</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3>Abonnez-vous à notre newsletter</h3>
+                    <p>Recevez les dernières nouveautés, promotions et conseils exclusifs.</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="newsletter-form d-flex">
+                        <input type="email" class="form-control" placeholder="Votre adresse email">
+                        <button class="btn" type="submit">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="footer-title"><i class="fas fa-shoe-prints me-2"></i>StyleStep</h4>
+                    <p>Votre destination pour des téléphones de qualité, et performants. Profitez d’une livraison rapide et d’un service client exceptionnel.</p>
+                   
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.php">Accueil</a></li>
+                        <li><a href="about.php">À propos</a></li>
+                        <li><a href="contact.php">Contact</a></li>
+             
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Catégories</h4>
+                    <ul class="footer-links">
+                        <li><a href="marketplace.php">IPhones</a></li>
+                        <li><a href="samsung.php">Samsung</a></li>
+                        <li><a href="Tablettes.php">Tablettes</a></li>
+                        <li><a href="reparer.php">Réparation</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>calavi togba non loin du Carrefou ,Assrossa</li>
+                        <li><i class="fas fa-phone me-2"></i> 0143520071</li>
+                        <li><i class="fas fa-clock me-2"></i> Lundi - Samedi : 9h - 20h</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center">
+            <div class="container">
+                <p>&copy; 2026 MONEYKING. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <script>    
+function filterProducts(category) {
+    let items = document.querySelectorAll(".product-item");
+
+    items.forEach(item => {
+        if (category === "all") {
+            item.style.display = "block";
+        } else {
+            if (item.classList.contains(category)) {
+                item.style.display = "block";
+            } else {
+                item.style.display = "none";
+            }
+        }
+    });
+}
+
+</script>
+
+<!-- Bootstrap JS (IMPORTANT) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bouton retour en haut -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Bootstrap JS avec Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+  
+</body>
+</html>

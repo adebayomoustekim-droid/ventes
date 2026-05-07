@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+   
+<nav class="navbar justify-content-center">
+    <div class="nav-icons d-flex">
+
+        <a href="index.php"><i class="fa-solid fa-house"></i></a>
+
+        <a href="marketplace.php"><i class="fa-solid fa-store"></i></a>
+
+        <a href="contact.php"><i class="fa-solid fa-envelope"></i></a>
+        
+        <a href="reparer.php"><i class="fa-solid fa-wrench"></i></a>
+        
+
+    </div>
+</nav>
+
+
+<section class="repair-section">
+<div class="container">
+<h2 class="title">🔧 Nos Services de Réparation</h2>
+
+<div class="grid">
+
+<!-- CARD -->
+<div class="card">
+<img src="image109.jpg">
+<h3>Écran cassé</h3>
+<p>Remplacement écran fissuré ou cassé.</p>
+<a class="btn"
+href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20réparer%20mon%20téléphone%20📱%0A%0A🔧%20Problème%20:%20Écran%20cassé%0A🖼️%20Image%20:%20image109.jpg"
+target="_blank">Réparer maintenant</a>
+</div>
+
+<div class="card">
+<img src="image118.jpg">
+<h3>Téléphone HS</h3>
+<p>Ne s’allume plus.</p>
+<a class="btn"
+href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20réparer%20mon%20téléphone%20📱%0A%0A🔧%20Problème%20:%20Téléphone%20HS%0A🖼️%20Image%20:%20image118.jpg"
+target="_blank">Réparer maintenant</a>
+</div>
+
+<div class="card">
+<img src="image116.jpg">
+<h3>Batterie</h3>
+<p>Se décharge rapidement.</p>
+<a class="btn"
+href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20réparer%20mon%20téléphone%20📱%0A%0A🔧%20Problème%20:%20Batterie%20se%20décharge%20rapidement%0A🖼️%20Image%20:%20image116.jpg"
+target="_blank">Réparer maintenant</a>
+</div>
+
+<div class="card">
+<img src="image115.jpg">
+<h3>Problème de charge</h3>
+<p>Ne charge pas.</p>
+<a class="btn"
+href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20réparer%20mon%20téléphone%20📱%0A%0A🔧%20Problème%20:%20Ne%20charge%20pas%0A🖼️%20Image%20:%20image115.jpg"
+target="_blank">Réparer maintenant</a>
+</div>
+
+<div class="card">
+<img src="image117.jpg">
+<h3>Port de charge</h3>
+<p>Connecteur endommagé.</p>
+<a class="btn"
+href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20réparer%20mon%20téléphone%20📱%0A%0A🔧%20Problème%20:%20Port%20de%20charge%20endommagé%0A🖼️%20Image%20:%20image117.jpg"
+target="_blank">Réparer maintenant</a>
+</div>
+
+<div class="card">
+<img src="image114.jpg">
+<h3>Réseau</h3>
+<p>SIM non détectée.</p>
+<a class="btn"
+href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20réparer%20mon%20téléphone%20📱%0A%0A🔧%20Problème%20:%20Réseau%0A🖼️%20Image%20:%20image114.jpg"
+target="_blank">Réparer maintenant</a>
+</div>
+
+<div class="card">
+<img src="image119.jpg">
+<h3>Caméra</h3>
+<p>Appareil photo HS.</p>
+<a class="btn"
+href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20réparer%20mon%20téléphone%20📱%0A%0A🔧%20Problème%20:%20Caméra%0A🖼️%20Image%20:%20image119.jpg"
+target="_blank">Réparer maintenant</a>
+</div>
+
+<div class="card">
+<img src="">
+<h3>Son</h3>
+<p>Micro ou haut-parleur défectueux.</p>
+<a class="btn"
+href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20réparer%20mon%20téléphone%20📱%0A%0A🔧%20Problème%20:%20Son%0A🖼️%20Image%20:%20image.jpg"
+target="_blank">Réparer maintenant</a>
+</div>
+
+<div class="card">
+<img src="image112.jpg">
+<h3>Surchauffe</h3>
+<p>Téléphone chauffe.</p>
+<a class="btn"
+href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20réparer%20mon%20téléphone%20📱%0A%0A🔧%20Problème%20:%20Surchauffe%0A🖼️%20Image%20:%20image112.jpg"
+target="_blank">Réparer maintenant</a>
+</div>
+
+<div class="card">
+<img src="image113.jpg">
+<h3>Bug système</h3>
+<p>Téléphone lent ou bloqué.</p>
+<a class="btn"
+href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20réparer%20mon%20téléphone%20📱%0A%0A🔧%20Problème%20:%20Ne%20charge%20pas%0A🖼️%20Image%20:%20image115.jpg"
+target="_blank">Réparer maintenant</a>
+</div>
+
+<div class="card">
+<img src="">
+<h3>Téléphone bloqué</h3>
+<p>Mot de passe oublié.</p>
+<a class="btn"
+href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20réparer%20mon%20téléphone%20📱%0A%0A🔧%20Problème%20:%20Téléphone%20bloqué%0A🖼️%20Image%20:%20image.jpg"
+target="_blank">Réparer maintenant</a>
+</div>
+
+<div class="card">
+<img src="image120.jpg">
+<h3>Tactile</h3>
+<p>Écran ne répond pas.</p>
+<a class="btn"
+href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20réparer%20mon%20téléphone%20📱%0A%0A🔧%20Problème%20:%20Tactile%0A🖼️%20Image%20:%20image120.jpg"
+target="_blank">Réparer maintenant</a>
+</div>
+
+<div class="card">
+<img src="image121.jpg">
+<h3>Remplacement Vitre</h3>
+<p>Vitre ou écran complet.</p>
+<a class="btn"
+href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20réparer%20mon%20téléphone%20📱%0A%0A🔧%20Problème%20:%20Remplacement%20Vitre%0A🖼️%20Image%20:%20image121.jpg"
+target="_blank">Réparer maintenant</a>
+</div>
+
+<div class="card">
+<img src="image110.jpg">
+<h3>Carte mère</h3>
+<p>Réparation avancée.</p>
+<a class="btn"
+href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20réparer%20mon%20téléphone%20📱%0A%0A🔧%20Problème%20:%20Carte%20mère%0A🖼️%20Image%20:%20image110.jpg"
+target="_blank">Réparer maintenant</a>
+</div>
+
+<div class="card">
+<img src="image20.jpg">
+<h3>Face ID</h3>
+<p>Face ID ne fonctionne pas.</p>
+<a class="btn"
+href="https://wa.me/2290143520071?text=Bonjour%20je%20veux%20réparer%20mon%20téléphone%20📱%0A%0A🔧%20Problème%20:%20Face%20ID%0A🖼️%20Image%20:%20image20.jpg"
+target="_blank">Réparer maintenant</a>
+</div>
+</div>
+</div>
+</section>
+ <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="footer-title"><i class="fas fa-shoe-prints me-2"></i>StyleStep</h4>
+                    <p>Votre destination pour des téléphones de qualité, et performants. Profitez d’une livraison rapide et d’un service client exceptionnel.</p>
+                   
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.php">Accueil</a></li>
+                       
+                        <li><a href="contact.php">Contact</a></li>
+             
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Catégories</h4>
+                    <ul class="footer-links">
+                        <li><a href="marketplace.php">IPhones</a></li>
+                        <li><a href="samsung.php">Samsung</a></li>
+                        <li><a href="Tablettes.php">Tablettes</a></li>
+                        <li><a href="reparer.php">Réparation</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>calavi togba non loin du Carrefou ,Assrossa</li>
+                        <li><i class="fas fa-phone me-2"></i> 0143520071</li>
+                        <li><i class="fas fa-clock me-2"></i> Lundi - Samedi : 9h - 20h</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center">
+            <div class="container">
+                <p>&copy; 2026 MONEYKING. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+<style>
+    
+:root {
+    --primary: #ff6b6b;
+}
+
+/* SECTION */
+.repair-section {
+    background: #ffffff;
+    padding: 60px 20px;
+}
+
+.title {
+    text-align: center;
+    color: #000;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+    color: #000;
+    border: 1px solid #eee;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: 0.3s; /* ✅ correction ici */
+}
+
+/* hover image zoom */
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card h3 {
+    margin-top: 10px;
+}
+
+.card p {
+    padding: 0 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* hover card */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* BOUTON */
+.btn {
+    display: block;
+    margin: 15px;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--primary);
+} </style>

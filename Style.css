@@ -22,24 +22,34 @@
 .navbar {
     background: white;
     padding: 15px 0;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     position: fixed;
-    
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
+/* CONTAINER DES ICÔNES */
+.nav-icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
 /* ICONS */
 .nav-icons a {
     color: rgb(19, 17, 17);
     font-size: 22px;
-    margin: 0 18px;
     transition: 0.3s ease;
     position: relative;
+    text-decoration: none;
 }
 
 /* HOVER EFFECT */
 .nav-icons a:hover {
-    color: var(--primary);
+    color: var(--primary, #007bff);
     transform: translateY(-5px);
 }
 
@@ -49,9 +59,9 @@
     position: absolute;
     left: 50%;
     bottom: -6px;
-    width: 0%;
+    width: 0;
     height: 2px;
-
+    background: var(--primary, #007bff);
     transition: 0.3s;
     transform: translateX(-50%);
 }
@@ -59,7 +69,6 @@
 .nav-icons a:hover::after {
     width: 100%;
 }
-
        
         .hero {
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Image.jpg') no-repeat;
